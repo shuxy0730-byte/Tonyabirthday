@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tonya 24 congratulation！level up！</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="stage">
+      <video id="camera" class="camera" playsinline muted></video>
+      <canvas id="overlay" class="overlay" aria-label="生日互动画布"></canvas>
+
+      <section class="topbar" aria-label="控制栏">
+        <div>
+          <p class="eyebrow">Happy Birthday</p>
+          <h1>Tonya 24 congratulation！level up！</h1>
+        </div>
+        <div class="actions">
+          <button id="startBtn" type="button">
+            <span aria-hidden="true">▶</span>
+            开始
+          </button>
+          <button id="demoBtn" type="button" class="ghost">
+            <span aria-hidden="true">✦</span>
+            演示
+          </button>
+        </div>
+      </section>
+
+      <aside class="status" aria-live="polite">
+        <span id="statusDot" class="dot"></span>
+        <span id="statusText">准备好后点击开始</span>
+      </aside>
+
+      <div id="message" class="message" role="status" aria-live="polite"></div>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
